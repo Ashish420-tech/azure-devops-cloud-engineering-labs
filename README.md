@@ -1,177 +1,250 @@
-🚀 Azure DevOps – 50 Real-World CI/CD & Cloud DevOps Labs
+# 🚀 Azure DevOps & Cloud Engineering Labs – 50 Real-World DevOps Scenarios
 
-This repository showcases hands-on, real-world DevOps scenarios implemented as part of my DevOps and Cloud engineering journey.
-It focuses on practical CI/CD pipelines, containerization, Kubernetes deployments, Infrastructure as Code, and troubleshooting patterns commonly faced in production environments.
+## Overview
 
-The labs are designed around real DevOps problems, not just tutorials, covering build failures, deployment strategies, infrastructure automation, and monitoring concepts.
+This repository is a collection of 50 hands-on Azure DevOps, Cloud, Kubernetes, and Infrastructure as Code (IaC) labs designed to simulate real-world DevOps challenges commonly encountered in modern enterprise environments.
 
-🎯 Skills & Technologies Demonstrated
+The objective of these labs is to demonstrate practical experience with CI/CD pipelines, containerization, Kubernetes orchestration, cloud infrastructure automation, deployment strategies, and troubleshooting workflows. Each lab focuses on solving a specific operational or engineering problem using industry-standard DevOps tools and practices.
 
-CI/CD Pipelines
+## Key Skills Demonstrated
 
-Azure DevOps YAML pipelines
+### CI/CD & DevOps Automation
 
-Jenkins pipelines
+* Azure DevOps YAML Pipelines
+* Jenkins Declarative Pipelines
+* Continuous Integration & Continuous Deployment
+* Pipeline Troubleshooting and Debugging
+* Automated Build and Release Workflows
+* Git-Based Development Practices
 
-Pipeline debugging and fixes
+### Containerization
 
-Containerization
+* Docker Image Creation
+* Multi-Stage Docker Builds
+* Container Lifecycle Management
+* Image Optimization and Deployment
 
-Docker image creation
+### Kubernetes & Container Orchestration
 
-Multi-stage Docker builds
+* Kubernetes Deployments and Services
+* Rolling Updates and Rollbacks
+* Blue-Green Deployment Strategy
+* Ingress and Service Management
+* Pod Troubleshooting and Failure Analysis
+* Minikube-Based Cluster Administration
 
-Containerized application deployment
+### Infrastructure as Code (IaC)
 
-Kubernetes
+* Terraform for Azure Infrastructure Provisioning
+* Automated Resource Deployment
+* Infrastructure Version Control
+* Environment Consistency and Repeatability
 
-Kubernetes deployments and services
+### Cloud & Platform Engineering
 
-Blue-Green and rolling deployment strategies
+* Microsoft Azure Fundamentals
+* Azure DevOps Project Configuration
+* Environment-Based Deployments
+* Infrastructure Automation
+* Operational Readiness and Monitoring Concepts
 
-Minikube-based Kubernetes labs
+---
 
-Troubleshooting pod and service issues
+## Repository Structure
 
-Infrastructure as Code (IaC)
-
-Terraform with Azure
-
-Automated infrastructure provisioning
-
-Basic state and resource management
-
-Cloud & DevOps Practices
-
-Azure DevOps project configuration
-
-Environment-based deployments
-
-CI/CD integration with containers and Kubernetes
-
-Monitoring and operational awareness
-
-📁 Repository Structure (High-Level)
+```text
 azure-devops-50-realworld-labs/
-│
-├── ci-cd/                 # CI/CD pipeline labs
-├── docker/                # Docker build & image labs
-├── kubernetes/            # Kubernetes deployment & troubleshooting labs
-├── terraform/             # Terraform & Azure IaC labs
-├── scripts/               # Automation & helper scripts
-├── screenshots/           # Pipeline / deployment screenshots (where applicable)
+
+├── ci-cd/              # Azure DevOps & Jenkins pipeline labs
+├── docker/             # Docker build and containerization labs
+├── kubernetes/         # Kubernetes deployment and troubleshooting labs
+├── terraform/          # Azure Infrastructure as Code labs
+├── scripts/            # Automation and utility scripts
+├── screenshots/        # Pipeline and deployment screenshots
 └── README.md
+```
 
+Each lab is designed around a practical DevOps use case and includes the necessary YAML configurations, scripts, Dockerfiles, Terraform code, and supporting documentation.
 
-Each lab folder contains YAML files, scripts, and configuration files used to solve a specific DevOps scenario.
+---
 
-⭐ Highlighted Real-World Labs
-🔹 CI/CD Pipeline Implementation & Debugging
+## Featured Labs
 
-Built CI/CD pipelines using Azure DevOps YAML
+### CI/CD Pipeline Implementation & Troubleshooting
 
-Identified and fixed pipeline build and deployment errors
+**Objective:** Automate application build and deployment workflows while resolving common pipeline failures.
 
-Integrated source code with automated build workflows
+**Technologies:**
 
-🔹 Docker & Container Workflows
+* Azure DevOps
+* Jenkins
+* Git
 
-Created Dockerfiles for application builds
+**Key Learning Outcomes:**
 
-Automated Docker image creation through pipelines
+* Pipeline as Code
+* Build Automation
+* Deployment Validation
+* Root Cause Analysis of Pipeline Failures
 
-Tested container images locally and in CI/CD flows
+---
 
-🔹 Kubernetes Deployments
+### Docker & Container Workflows
 
-Deployed containerized applications to Kubernetes
+**Objective:** Package applications into portable and reproducible containers.
 
-Implemented Blue-Green deployment strategy
+**Technologies:**
 
-Debugged pod failures, service exposure, and selector mismatches
+* Docker
+* Azure DevOps
 
-🔹 Terraform & Cloud Infrastructure
+**Key Learning Outcomes:**
 
-Provisioned Azure cloud resources using Terraform
+* Dockerfile Creation
+* Multi-Stage Builds
+* Image Management
+* Container Deployment Automation
 
-Practiced infrastructure automation and repeatable deployments
+---
 
-Integrated IaC workflows with CI/CD concepts
+### Kubernetes Deployment & Operations
 
-🛠 Example Lab Breakdown
-🔸 Blue-Green Deployment (Kubernetes)
+**Objective:** Deploy, manage, and troubleshoot containerized workloads.
 
-Problem: Deploy application updates without downtime
-Approach:
+**Technologies:**
 
-Maintain two environments (Blue & Green)
+* Kubernetes
+* Minikube
+* Azure DevOps
 
-Switch traffic using Kubernetes services
-Tools: Kubernetes, Azure DevOps Pipelines
-Learning Outcome:
+**Key Learning Outcomes:**
 
-Zero-downtime deployment concepts
+* Deployments and Services
+* Rolling Updates
+* Blue-Green Deployments
+* Pod and Service Troubleshooting
+* Traffic Management
 
-Rollback safety and service selector management
+---
 
-🔸 Terraform Azure Infrastructure Lab
+### Terraform for Azure Infrastructure
 
-Problem: Manual cloud provisioning is error-prone
-Approach:
+**Objective:** Automate cloud infrastructure provisioning using Infrastructure as Code.
 
-Use Terraform to provision Azure resources
+**Technologies:**
 
-Apply infrastructure changes via code
-Tools: Terraform, Azure
-Learning Outcome:
+* Terraform
+* Microsoft Azure
 
-Infrastructure as Code fundamentals
+**Key Learning Outcomes:**
 
-Repeatable and auditable cloud deployments
+* Infrastructure Automation
+* Resource Lifecycle Management
+* Repeatable Deployments
+* Environment Consistency
 
-🧪 How to Use This Repository
+---
+
+## Example Scenario: Blue-Green Deployment
+
+### Problem
+
+Deploy application updates without service interruption or downtime.
+
+### Solution
+
+* Maintain two identical environments (Blue and Green)
+* Deploy updates to the inactive environment
+* Switch production traffic using Kubernetes Services
+* Roll back instantly if issues occur
+
+### Technologies
+
+* Kubernetes
+* Azure DevOps
+
+### Outcome
+
+* Zero-Downtime Deployment Strategy
+* Safe Rollback Mechanism
+* Improved Release Reliability
+
+---
+
+## Example Scenario: Terraform Azure Infrastructure
+
+### Problem
+
+Manual cloud provisioning leads to configuration drift and deployment inconsistencies.
+
+### Solution
+
+* Provision Azure resources using Terraform
+* Manage infrastructure through version-controlled code
+* Apply repeatable deployment workflows
+
+### Technologies
+
+* Terraform
+* Microsoft Azure
+
+### Outcome
+
+* Infrastructure as Code Adoption
+* Reduced Manual Effort
+* Consistent and Auditable Deployments
+
+---
+
+## Getting Started
 
 Clone the repository:
 
+```bash
 git clone https://github.com/Ashish420-tech/azure-devops-50-realworld-labs.git
+```
 
+Navigate to any lab:
 
-Navigate to any lab folder:
-
+```bash
 cd kubernetes/lab-19
+```
 
+Review the provided:
 
-Review:
+* YAML configurations
+* Dockerfiles
+* Terraform templates
+* Automation scripts
+* Documentation and execution notes
 
-YAML files
+---
 
-Dockerfiles
-
-Terraform configs
-
-Scripts
-
-Follow comments inside files for execution and learning steps.
-
-These labs are intended for learning and demonstration purposes, not as production-ready templates.
-
-📌 Why This Repository Matters
+## Professional Value
 
 This repository demonstrates:
 
-Practical DevOps problem-solving
+* Practical Azure DevOps Implementation
+* CI/CD Pipeline Development
+* Kubernetes Administration and Troubleshooting
+* Infrastructure as Code with Terraform
+* Containerization Best Practices
+* Cloud Automation Workflows
+* Production-Oriented Deployment Strategies
+* DevOps Problem-Solving and Troubleshooting Skills
 
-Exposure to real CI/CD failures and fixes
+It serves as a portfolio of hands-on engineering work and reflects my transition from Infrastructure & Cloud Operations to Azure DevOps, Cloud Engineering, and Platform Engineering roles.
 
-Hands-on work with containers, Kubernetes, and IaC
+---
 
-Understanding of production-style deployment patterns
+## Connect With Me
 
-It directly supports my transition into DevOps / Cloud Engineering roles by providing verifiable evidence of hands-on experience.
+**GitHub:** github.com/Ashish420-tech
 
-🔗 Links
+**LinkedIn:** linkedin.com/in/ashishmondal-a4190638a
 
-GitHub: https://github.com/Ashish420-tech
+**Focus Areas:** Azure DevOps | Kubernetes | Terraform | Cloud Infrastructure | CI/CD | Platform Engineering
+
 
 LinkedIn: https://www.linkedin.com/in/ashish-mondal-a4190638a/
 
